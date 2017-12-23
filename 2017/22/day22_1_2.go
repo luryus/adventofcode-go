@@ -65,7 +65,7 @@ func part2() {
 }
 
 func main() {
-	if os.Args[1] == "2" {
+	if len(os.Args) > 1 && os.Args[1] == "2" {
 		part2()
 	} else {
 		part1()
